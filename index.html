@@ -1,28 +1,496 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-inicio</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-    <header>
 
+    <title>Dante | Java Full Stack Developer</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#inicio" class="logo">
+                Dante<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <a href="#" class="btn btn-primary">
+                Descargar CV
+            </a>
+
+        </nav>
     </header>
+
 
     <main>
 
+<!-- HERO -->
+<section id="inicio" class="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <p class="hero-label">
+                Hola, soy
+            </p>
+
+            <h1 class="hero-name">
+                Dante Escamilla
+            </h1>
+
+            <h2 class="hero-role">
+                Java Full Stack Developer
+            </h2>
+
+            <h3 class="hero-focus">
+                Enfocado en desarrollo Backend
+            </h3>
+
+            <p class="hero-description">
+                Desarrollo aplicaciones web y soluciones de software
+                utilizando Java, Spring Boot, bases de datos y tecnologías web.
+                Mi formación en Ingeniería Física complementa mi perfil con
+                pensamiento analítico y resolución de problemas.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#proyectos" class="btn btn-primary">
+                    Ver proyectos
+                </a>
+
+                <a href="#contacto" class="btn btn-secondary">
+                    Contactarme
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/descamillaa98" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/descamillaa98" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGEN -->
+        <div class="hero-image-container">
+
+            <div class="hero-image-border">
+
+                <img
+                    src="assets/Dante.png"
+                    alt="Dante Escamilla"
+                    class="hero-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- TECNOLOGÍAS -->
+        <section class="technologies section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>Tecnologías</span>
+                    <h2>Herramientas principales</h2>
+                </div>
+
+                <div class="tech-grid">
+
+                    <div class="tech-card">
+                        <i class="bi bi-cup-hot"></i>
+                        <p>Java</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <svg class="tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 3C10 3 4 7 4 13a7 7 0 0 0 7 7c6 0 9-7 9-17Z" />
+                            <path d="M3 21 15 9M8 16v-5M8 16h5" />
+                        </svg>
+                        <p>Spring Boot</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="bi bi-database"></i>
+                        <p>MySQL</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="bi bi-filetype-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="bi bi-filetype-html"></i>
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="bi bi-filetype-css"></i>
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="bi bi-git"></i>
+                        <p>Git</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i class="bi bi-filetype-py"></i>
+                        <p>Python</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE MI -->
+        <section id="sobre-mi" class="about section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>Sobre mí</span>
+                    <h2>Perfil profesional</h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <p>
+                            Soy desarrollador Java Full Stack con especial interés
+                            en el desarrollo Backend y la construcción de aplicaciones
+                            web estructuradas, mantenibles y escalables.
+                        </p>
+
+                        <p>
+                            Mi formación en Ingeniería Física me ha permitido desarrollar
+                            capacidades de análisis, modelado matemático, resolución de
+                            problemas y pensamiento lógico que aplico actualmente al
+                            desarrollo de software.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skills-grid">
+
+                        <div class="skill-card">
+                            <h3>Backend</h3>
+
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>APIs REST</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="skill-card">
+                            <h3>Frontend</h3>
+
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="skill-card">
+                            <h3>Bases de datos</h3>
+
+                            <ul>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="skill-card">
+                            <h3>Herramientas</h3>
+
+                            <ul>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="projects section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>Portafolio</span>
+                    <h2>Proyectos</h2>
+
+                    <p>
+                        Algunos proyectos en los que he trabajado y que reflejan
+                        mis conocimientos en desarrollo de software.
+                    </p>
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <!-- LUDUS -->
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="assets/LUDUS_portada.png" alt="Portada del proyecto LUDUS" loading="lazy">
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-status">
+                                En desarrollo
+                            </span>
+
+                            <h3>LUDUS</h3>
+
+                            <p>
+                                Red social enfocada en videojuegos donde los usuarios
+                                pueden compartir opiniones, interactuar y descubrir
+                                contenido relacionado con videojuegos.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://github.com/LUDUSS/Proyecto-integrador" class="btn btn-primary">
+                                    Ver proyecto
+                                </a>
+
+                                <a href="https://github.com/LUDUSS/Proyecto-integrador" class="btn-icon">
+                                    <i class="bi bi-github"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROYECTO TERMINAL -->
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="assets/PT.png" alt="Proyecto Terminal de Ingeniería Física" loading="lazy">
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-status">
+                                Académico
+                            </span>
+
+                            <h3>Proyecto Terminal</h3>
+
+                            <p>
+                                Proyecto desarrollado durante mi formación en
+                                Ingeniería Física utilizando Python para análisis,
+                                procesamiento y resolución de un problema científico.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Análisis de datos</span>
+                                <span>Ciencia</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="#" class="btn btn-primary">
+                                    Ver proyecto
+                                </a>
+
+                                <a href="#" class="btn-icon">
+                                    <i class="bi bi-github"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contact section">
+
+            <div class="container contact-container">
+
+                <div class="contact-info">
+
+                    <div class="section-title">
+                        <span>Contacto</span>
+                        <h2>¿Trabajamos juntos?</h2>
+                    </div>
+
+                    <p>
+                        Si quieres hablar sobre una oportunidad laboral,
+                        colaboración o proyecto, puedes contactarme.
+                    </p>
+
+                    <div class="contact-links">
+
+                        <a href="#">
+                            <i class="bi bi-envelope"></i>
+                            correo@ejemplo.com
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/descamillaa98">
+                            <i class="bi bi-linkedin"></i>
+                            LinkedIn
+                        </a>
+
+                        <a href="https://github.com/descamillaa98">
+                            <i class="bi bi-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            placeholder="Tu nombre">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            placeholder="correo@ejemplo.com">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+
+                        <textarea
+                            id="mensaje"
+                            rows="6"
+                            placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+
+
+                    <div id="erroresFormulario" class="form-errors" role="alert" hidden></div>
+
+                    <p id="estadoEnvio" class="form-errors" role="status" aria-live="polite" hidden></p>
+
+                    <button id="btnEnviar" class="btn btn-primary" type="submit">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>Dante</h3>
+                <p>Java Full Stack Developer</p>
+            </div>
+
+            <div class="footer-social">
+
+                <a href="https://github.com/descamillaa98">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/descamillaa98">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+            </div>
+
+        </div>
 
     </footer>
-    
-    <!-- JS-->
-    <script src="./js/main.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./js/formulario.js"></script>
 </body>
+
 </html>
