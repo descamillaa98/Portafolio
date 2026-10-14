@@ -19,9 +19,9 @@ formulario.addEventListener("submit", async function (evento) {
     const regexNombre = /^\p{L}{3,}$/u;
     const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const validaciones = [
-        { campo: nombre, valido: regexNombre.test(nombre.value.trim()), texto: "Nombre: debe tener al menos 3 caracteres y solo letras." },
-        { campo: correo, valido: regexCorreo.test(correo.value.trim()), texto: "Correo: escribe un correo con formato válido, como nombre@ejemplo.com." },
-        { campo: mensaje, valido: mensaje.value.trim().length >= 10, texto: "Mensaje: debe tener al menos 10 caracteres." }
+        { campo: nombre, valido: regexNombre.test(nombre.value.trim()), texto: "Name: must contain at least 3 characters and only letters." },
+        { campo: correo, valido: regexCorreo.test(correo.value.trim()), texto: "Email: enter a valid email address, such as name@example.com." },
+        { campo: mensaje, valido: mensaje.value.trim().length >= 10, texto: "Message: must contain at least 10 characters." }
     ];
 
     erroresFormulario.replaceChildren();
@@ -58,13 +58,13 @@ formulario.addEventListener("submit", async function (evento) {
     }
 
     if (!emailjsConfig.templateId || !emailjsConfig.publicKey) {
-        mostrarEstado("El envío aún no está configurado. Falta el Template ID y la Public Key de EmailJS.", false);
+        mostrarEstado("Sending is not configured yet. The EmailJS Template ID and Public Key are missing.", false);
         return;
     }
 
     enviando = true;
     btnEnviar.disabled = true;
-    btnEnviar.textContent = "Enviando...";
+    btnEnviar.textContent = "Sending...";
     formulario.setAttribute("aria-busy", "true");
 
     try {
@@ -74,14 +74,14 @@ formulario.addEventListener("submit", async function (evento) {
             message: mensaje.value.trim()
         }, { publicKey: emailjsConfig.publicKey });
 
-        mostrarEstado("¡Mensaje enviado con éxito! Gracias por contactarme.", true);
+        mostrarEstado("Message sent successfully! Thank you for getting in touch.", true);
         formulario.reset();
     } catch (error) {
-        mostrarEstado("No se pudo enviar el mensaje. Inténtalo de nuevo en unos momentos.", false);
+        mostrarEstado("The message could not be sent. Please try again in a few moments.", false);
     } finally {
         enviando = false;
         btnEnviar.disabled = false;
-        btnEnviar.textContent = "Enviar mensaje";
+        btnEnviar.textContent = "Send message";
         formulario.removeAttribute("aria-busy");
     }
 });
